@@ -1,0 +1,16 @@
+[package]
+name = "menu-maker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+pdf-extract = "0.7.7"
+poppler = "0.5.0"
+regex = "1.10.4"
+serde_json = "1.0.117"
+serde = { version = "1.0.202", features = ["derive"] }
+scraper = "0.19.0"
+reqwest = { version = "0.12.4", features = ["blocking", "json"] }
+thirtyfour = "0.32.0"
+tokio = { version = "1", features = ["full"] }

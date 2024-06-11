@@ -1,0 +1,31 @@
+[package]
+name = "menu-manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Web framework that focuses on ergonomics and modularity.
+axum = "0.7.5"
+
+# Modular reusable components for building robust clients and servers.
+tower = "0.4.13"
+
+# A fast and correct HTTP library.
+hyper = { version = "1.3.1", features = ["full"] }
+
+# Event-driven, non-blocking I/O platform.
+tokio = { version = "1.38.0", features = ["full"] }
+
+# A serialization/deserialization framework.
+serde = { version = "1.0.203", features = ["derive"] }
+
+# Serde serializion/deserialization of JSON data.
+serde_json = { version = "1.0.117" }
+chrono = "0.4.38"
+
+rusqlite = { version = "0.31.0", features = ["serde_json"] }
+tower-http = { version = "0.5.2", features = ["trace"] }
+tracing = "0.1.40"
+tracing-appender = "0.2.3"
+tracing-panic = "0.1.2"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
