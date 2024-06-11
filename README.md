@@ -1,4 +1,4 @@
-#Menu Manager
+# Menu Manager
 
 Ultra basic server to manage a small database of menu items and an API endpoint to access them.
 
